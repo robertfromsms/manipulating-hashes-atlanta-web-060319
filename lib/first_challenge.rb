@@ -16,10 +16,11 @@ def first_challenge
   #your code here
   contacts.each do |person, data|
     if person == "Freddy Mercury"
-    data.each do |attribute, value|
-      if attribute == :favorite_icecream_flavors
-        value.each do |flavor|
-          puts "#{flavor}"
+      data.each do |attribute, value|
+        if attribute == :favorite_icecream_flavors
+          value.each do |flavor|
+            puts "#{flavor}"
+          end
         end
       end
     end
